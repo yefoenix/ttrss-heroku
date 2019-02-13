@@ -14,10 +14,10 @@ Supposing you have already a Heroku account and you have the [Heroku CLI](https:
 
 ```sh
 # clone this repository
-$ git clone https://github.com/serl/ttrss-heroku.git && cd ttrss-heroku
+$ git clone https://github.com/yefoenix/ttrss-heroku.git && cd ttrss-heroku
 
-# create the application (names are unique on the platform)
-$ heroku create my-fancy-ttrss
+# create the application (with a name that unique on the platform)
+$ heroku create your-ttrss-app-name 
 
 # we'll need a database
 $ heroku addons:create heroku-postgresql:hobby-dev
@@ -84,9 +84,3 @@ Either you update the submodule in `tt-rss`, or you wait me to pick the latest c
 * Let the web dyno go to sleep when it's tired (don't keep that tab always open / use The Great Suspender on Chrome).
 * *(unrelated to dyno hours, but still important)* As we're in the free tier for the database, we're limited to 10k rows. Check from time to time if you're compliant (Heroku web interface is friendly). If not, consider deleting some feeds.
 
-
-## TODOs
-
-* Persist sessions (memcached)?
-* Email digest support
-* *You name it*
